@@ -1,0 +1,47 @@
+name: "✏️ fix"
+description: "기존 기능 개선 및 수정 (제목은 'fix: 기존 기능 수정' 형태로 입력해 주세요)"
+title: "fix: "
+labels: ["fix"]
+
+body:
+  - type: textarea
+    attributes:
+      label: 🔧 수정할 기능
+      description: |
+        어떤 기능을 수정하거나 개선하려는지 작성해 주세요.
+        예: 로그인 토큰 검증 로직 개선, 캐시 데이터 저장 방식 변경, 응답 포맷 수정
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 📄 수정/개선 내용 설명
+      description: |
+        기능을 어떻게 수정하거나 개선할 예정인지 상세히 작성해 주세요.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: ✅ 작업할 내용
+      description: |
+        수정할 작업을 체크박스 형태로 작성해 주세요.
+        예:
+        - [ ] 기존 데이터 저장 구조 변경
+        - [ ] 인증 토큰 검증 로직 분리
+        - [ ] API 응답 필드 추가
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 💡 참고 자료
+      description: |
+        참고 자료가 있다면 작성해 주세요.
+        예:
+        - 요청/응답 예시
+        - 변경 전/후 비교
+
+        참고 자료가 없다면 `_No response_`로 작성해 주세요.
+    validations:
+      required: true
